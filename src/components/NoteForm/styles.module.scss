@@ -1,0 +1,76 @@
+.noteMenu {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-width: 400px;
+    min-height: 95vh;
+    padding: 20px;
+    background: var(--dark-gray);
+
+    div:not(.buttons) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div label {
+        font-weight: 300;
+        font-size: 24px;
+    
+        color: white;
+        margin-bottom: 8px;
+    }
+
+    div input {
+        border: 0;
+        height: 40px;
+    
+        margin-bottom: 8px;
+    }
+
+    div textarea {
+        resize: none;
+    }
+
+    div textarea, div input {
+        background: var(--note-background);
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    div textarea::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    div textarea::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    div textarea::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    div textarea:hover::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    > button {
+    cursor: pointer;
+    padding: 2px;
+    background: transparent;
+    border: none;
+}
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+
+    color: #fff;  
+}

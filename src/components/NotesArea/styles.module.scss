@@ -1,0 +1,27 @@
+@media (max-width: 720px) {
+    .notesArea {
+        flex-wrap:wrap-reverse;
+
+        form {
+            flex: 1;
+            min-height: 340px;
+        }
+
+        section {
+            justify-content: center;
+            margin: 0;
+
+            div {
+                margin: 20px 0 0 20px;
+            }
+        }
+
+    }
+
+}
+
+.notesArea {
+    display: flex;
+    justify-content:space-between;
+
+}
